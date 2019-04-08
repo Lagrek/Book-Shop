@@ -201,77 +201,95 @@ font-size: 30px;
   width:370px;
   height:295px;
 }
-@media (min-width: 900px) and (max-width: 1366px) {
+@media (min-width: 1100px) and (max-width: 1366px) {
   .content{
-  width:280px;
+  width:250px;
   height:225px;
   float:left;
   margin-top: 25px;
   opacity: 1;
-  margin-left: 9%;
+  margin-left: 10%;
 }
 .content:hover{
   opacity: 0.6;
 }
 .content img{
-  width:270px;
+  width:250px;
   height:215px;
 }
 }
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 900px) and (max-width: 1099px) {
   .content{
   width:230px;
   height:225px;
   float:left;
   margin-top: 25px;
   opacity: 1;
-  margin-left: 5%;
+  margin-left: 7%;
 }
 .content:hover{
   opacity: 0.6;
 }
 .content img{
-  width:220px;
+  width:230px;
   height:215px;
 }
 }
-@media (min-width: 400px) and (max-width: 599px) {
+@media (min-width: 700px) and (max-width: 899px) {
   .content{
-  width:190px;
-  height:145px;
+  width:180px;
+  height:175px;
   float:left;
-  margin-top: 25px;
+  margin-top: 15px;
   opacity: 1;
-  margin-left: 5%;
+  margin-left: 7%;
 }
 .content:hover{
   opacity: 0.6;
 }
 .content img{
   width:180px;
-  height:135px;
+  height:165px;
 }
 }
-@media (min-width: 0px) and (max-width: 399px) {
-.content{
-  width:160px;
-  height:110px;
+@media (min-width: 400px) and (max-width: 699px) {
+  .content{
+  width:300px;
+  height:255px;
   float:left;
-  margin-top: 5px;
+  margin-top: 25px;
   opacity: 1;
-  margin-left: 5%;
+  margin-left: 25%;
 }
 .content:hover{
   opacity: 0.6;
 }
 .content img{
-  width:150px;
-  height:100px;
+  width:300px;
+  height:245px;
 }
 }
+@media (min-width: 0px) and (max-width: 399px) {
+  .content{
+  width:270px;
+  height:255px;
+  float:left;
+  margin-top: 25px;
+  opacity: 1;
+}
+.content:hover{
+  opacity: 0.6;
+}
+.content img{
+  width:270px;
+  height:245px;
+}
+}
+
 .sell-books{
   width:100%;
   display: table;
+  border-bottom: 1px solid black;
 }
 .sell-books h1{
   text-align: center;
@@ -305,12 +323,12 @@ font-size: 30px;
 .books-sell button:hover{
   background-color: orange;
 }
-@media (min-width: 450px) and (max-width: 650px) {
+@media (min-width: 1100px) and (max-width: 1366px) {
 .books-sell{
-  width:200px;
+  width:220px;
   height: 350px;
   float:left;
-  margin-left: 9%;
+  margin-left: 5%;
   margin-top:15px;
   font-size: 14px;
 }
@@ -318,7 +336,7 @@ font-size: 30px;
   opacity: 0.6;
 }
 .books-sell img{
-  width:200px;
+  width:220px;
   height:250px;
   opacity: 1;
 }
@@ -333,21 +351,21 @@ font-size: 30px;
   background-color: orange;
 }
 }
-@media (min-width: 0px) and (max-width: 449px) {
+@media (min-width: 900px) and (max-width: 1099px) {
 .books-sell{
-  width:160px;
-  height: 300px;
+  width:180px;
+  height: 350px;
   float:left;
-  margin-left: 7%;
+  margin-left: 4%;
   margin-top:15px;
-  font-size: 10px;
+  font-size: 14px;
 }
 .books-sell img:hover{
   opacity: 0.6;
 }
 .books-sell img{
-  width:160px;
-  height:200px;
+  width:180px;
+  height:250px;
   opacity: 1;
 }
 .books-sell button{
@@ -360,4 +378,269 @@ font-size: 30px;
 .books-sell button:hover{
   background-color: orange;
 }
+}
+@media (min-width: 700px) and (max-width: 899px) {
+.books-sell{
+  width:150px;
+  height: 350px;
+  float:left;
+  margin-left: 4%;
+  margin-top:15px;
+  font-size: 12px;
+}
+.books-sell img:hover{
+  opacity: 0.6;
+}
+.books-sell img{
+  width:150px;
+  height:250px;
+  opacity: 1;
+}
+.books-sell button{
+  float:right;
+  margin-top: -15px;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  background-color: gray;
+}
+.books-sell button:hover{
+  background-color: orange;
+}
+}
+@media (min-width: 400px) and (max-width: 799px) {
+.books-sell{
+  width:250px;
+  height: 350px;
+  float:left;
+  margin-left: 5%;
+  margin-top:15px;
+  font-size: 14px;
+}
+.books-sell img:hover{
+  opacity: 0.6;
+}
+.books-sell img{
+  width:250px;
+  height:250px;
+  opacity: 1;
+}
+.books-sell button{
+  float:right;
+  margin-top: -15px;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  background-color: gray;
+}
+.books-sell button:hover{
+  background-color: orange;
+}
+}
+@media (min-width: 0px) and (max-width: 399px) {
+.books-sell{
+  width:270px;
+  height: 300px;
+  float:left;
+  margin-top:15px;
+  font-size: 10px;
+  margin-left: 10%;
+}
+.books-sell img:hover{
+  opacity: 0.6;
+}
+.books-sell img{
+  width:270px;
+  height:250px;
+  opacity: 1;
+}
+.books-sell button{
+  float:right;
+  margin-top: -15px;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  background-color: gray;
+}
+.books-sell button:hover{
+  background-color: orange;
+}
+}
+
+.spring-sell-out{
+  width:100%;
+  display: table;
+  border-bottom: 1px solid black;
+}
+.spring-sell-out h1{
+  text-align: center;
+  font-family: 'Alegreya', serif;
+}
+.sell-out{
+  width:250px;
+  height: 400px;
+  float:left;
+  margin-left: 9%;
+  margin-top:15px;
+}
+.sell-out p{
+  font-family: 'Roboto Slab', serif;
+}
+.sell-out img:hover{
+  opacity: 0.6;
+}
+.sell-out img{
+  width:250px;
+  height:300px;
+  opacity: 1;
+}
+.sell-out button{
+  float:right;
+  margin-top: -15px;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  background-color: gray;
+}
+.sell-out button:hover{
+  background-color: orange;
+}
+@media (min-width: 1100px) and (max-width: 1366px) {
+.sell-out{
+  width:220px;
+  height: 350px;
+  float:left;
+  margin-left: 5%;
+  margin-top:15px;
+  font-size: 14px;
+}
+.sell-out img:hover{
+  opacity: 0.6;
+}
+.sell-out img{
+  width:220px;
+  height:250px;
+  opacity: 1;
+}
+.sell-out button{
+  float:right;
+  margin-top: -15px;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  background-color: gray;
+}
+.sell-out button:hover{
+  background-color: orange;
+}
+}
+@media (min-width: 900px) and (max-width: 1099px) {
+.sell-out{
+  width:180px;
+  height: 350px;
+  float:left;
+  margin-left: 4%;
+  margin-top:15px;
+  font-size: 13px;
+}
+.sell-out img:hover{
+  opacity: 0.6;
+}
+.sell-out img{
+  width:180px;
+  height:250px;
+  opacity: 1;
+}
+.sell-out button{
+  float:right;
+  margin-top: -15px;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  background-color: gray;
+}
+.sell-out button:hover{
+  background-color: orange;
+}
+}
+@media (min-width: 700px) and (max-width: 899px) {
+.sell-out{
+  width:150px;
+  height: 350px;
+  float:left;
+  margin-left: 4%;
+  margin-top:15px;
+  font-size: 12px;
+}
+.sell-out img:hover{
+  opacity: 0.6;
+}
+.sell-out img{
+  width:150px;
+  height:250px;
+  opacity: 1;
+}
+.sell-out button{
+  float:right;
+  margin-top: -15px;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  background-color: gray;
+}
+.sell-out button:hover{
+  background-color: orange;
+}
+}
+@media (min-width: 400px) and (max-width: 799px) {
+.sell-out{
+  width:250px;
+  height: 350px;
+  float:left;
+  margin-left: 5%;
+  margin-top:15px;
+  font-size: 14px;
+}
+.sell-out img:hover{
+  opacity: 0.6;
+}
+.sell-out img{
+  width:250px;
+  height:250px;
+  opacity: 1;
+}
+.sell-out button{
+  float:right;
+  margin-top: -15px;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  background-color: gray;
+}
+.sell-out button:hover{
+  background-color: orange;
+}
+}
+@media (min-width: 0px) and (max-width: 399px) {
+.sell-out{
+  width:270px;
+  height: 300px;
+  float:left;
+  margin-top:15px;
+  font-size: 10px;
+  margin-left: 10%;
+}
+.sell-out img:hover{
+  opacity: 0.6;
+}
+.sell-out img{
+  width:270px;
+  height:250px;
+  opacity: 1;
+}
+.sell-out button{
+  float:right;
+  margin-top: -15px;
+  font-family: 'Roboto Slab', serif;
+  border:none;
+  background-color: gray;
+}
+.sell-out button:hover{
+  background-color: orange;
+}
+}
+.map{
+  width:100%;
 }
