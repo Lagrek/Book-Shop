@@ -1,0 +1,302 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+header{
+  font-family: 'Roboto Slab', serif;
+  display: table; 
+  width: 100%;
+  background-color:#212121;
+}
+
+.nav-wrapper{
+  background-color:#414a4c;
+}
+
+.iconBlocks a{
+  font-family: 'Roboto Slab', serif;
+}
+
+.brand-logo{
+    margin-left:20px; 
+    text-align: center;
+    width:400px; 
+    font-family: 'Alegreya SC', serif;
+}
+
+#mobile-demo{
+  background-color:#596669;
+}
+
+#search{
+  height:56px;
+}
+
+/*---------search------------*/
+.search{ 
+  position: relative;
+  top:10px; 
+  height:64px; 
+  width: 300px;
+}
+.magnifying-glass {
+  position: relative;
+  transform: translateX(40%);
+  transition: transform 500ms;
+}
+.search.active .magnifying-glass {
+  transform: translateX(-7%);
+}
+.magnifying-glass-path {
+  fill:none;
+  stroke-dasharray: 210 808;
+  stroke-linecap:round;
+  stroke-width:6;
+  stroke:white;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
+}
+.search.active .magnifying-glass-path {
+  stroke-dasharray: 580 808;
+  stroke-dashoffset: -224px;
+}
+.x {
+  fill:none;
+  stroke-dasharray: 56 92;
+  stroke-dashoffset: -92px;
+  stroke-linecap:round;
+  stroke-width:6;
+  stroke:white;
+  transition: stroke-dashoffset 500ms;
+  visibility: hidden;
+}
+.search.active .x {
+  visibility: visible;
+}
+.search.searching .x {
+  stroke-dashoffset: 0;
+}
+.input {
+  border: 0;
+  font-size: 1.2em;
+  left: 20px;
+  outline: 0 !important;
+  position: absolute;
+  top: 4px;
+}
+.overlay {
+  background: rgba(0,0,0,0);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  transition: background 300ms;
+}
+.overlay-1 {
+  height: 64px;
+  left: 110px;
+  top: -10px;
+  width: 64px;
+}
+.overlay-2 {
+  height: 38px;
+  left: 240px;
+  top: 0px;
+  width: 38px;
+}
+.search.active .overlay-1 {
+  visibility: hidden;
+}
+.search:not(.active) .overlay-2,
+.search:not(.searching) .overlay-2 {
+  visibility: hidden;
+}
+/*---------search------------*/
+
+/*dropdown start*/
+
+
+.nav-content{
+  font-family: 'Roboto Slab', serif;
+}
+
+#hovDropMenu:hover{
+  background: rgba(0,0,0,.1);
+}
+
+#hovDropMenu a:hover{
+  background: rgba(0,0,0,.1);
+  color:white;
+}
+
+.hovDropMenu:hover{
+  background: rgba(0,0,0,.1);
+}
+
+.hovDropMenu a:hover{
+  background: rgba(0,0,0,.1);
+  color:white;
+}
+
+.header {
+ text-align:center; 
+}
+.header a { 
+  padding: 30px 0 0;
+  display: block;
+  font-size: 48px;
+  text-decoration: none;
+}
+ .header p { 
+  margin: 10px 0 40px 0; 
+  font-size: 18px; 
+}
+ .container {
+  max-width: 100%; 
+}
+ @media only screen and (max-width : 1000px;) {
+  .stellarnav > ul > li > a {
+   padding: 20px 23px; }
+}
+
+
+/*dropdown stop*/
+
+#searchMobile{
+  width:100%;
+  text-align: center;
+}
+
+.registrationBlock{
+  width: 100%;
+  float: right; 
+  background-color:#dbdbdb;
+  background-image: url("../img/regphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 55vw;  
+}
+
+.dopTextBlock{
+  text-shadow: 2px 2px 3px black, 0 0 1em black;
+  color:white;
+  margin-top:20px; 
+  width:50%;
+  text-align: center; 
+  float: left;
+  height:185px; 
+  letter-spacing:1px; 
+}
+
+.sizeReg{
+  font-size:165%; 
+}
+
+.dopLogo{
+   font-family: 'Alegreya SC', serif;
+}
+
+.dopText{
+  font-family: 'Roboto Slab', serif;
+}
+
+.inRegstrBlck{ 
+  opacity:0.9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6); 
+  background-color:#bbbbbb;
+  width:365px;
+  height:550px;
+  float:right;
+  text-align: center;
+}
+
+
+
+.formBlock{
+  font-family: 'Roboto Slab', serif;
+  margin-top:20px; 
+}
+
+.widthInp{
+  float:right;
+  margin-right:50px; 
+  height: 100px;
+  border-bottom:2px groove #a1a1a1; 
+  width:250px; 
+}
+
+.widthInp2{
+  float:right;
+  height: 100px;
+  width:250px; 
+}
+
+.inputPl{  
+  height:30px;
+}
+
+.inpButton{
+  width:120px;
+  height: 30px;
+  background-color: #bbbbbb;
+  font-family: 'Roboto Slab', serif; 
+}
+
+.mrg{
+  width:100%;
+  height:200px;
+  background-color:#dbdbdb;
+  border:1px solid #dbdbdb;
+  float: right; 
+}
+
+.page-footer{
+  font-family: 'Roboto Slab', serif; 
+  background-color:#212121;
+}
+
+@media (min-width: 726px) and (max-width: 1000px) {
+.inRegstrBlck{ 
+  height:400px;
+}
+
+.registrationBlock{
+  background-image: url("../img/regphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 150vw;  
+}
+
+}
+
+@media (min-width: 500px) and (max-width: 725px) {
+
+.dopTextBlock{
+  width:100%;
+}
+
+.registrationBlock{
+  background-image: url("../img/regphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 150vw;  
+}
+
+}
+
+@media (min-width: 100px) and (max-width:479px) {
+
+.dopTextBlock{
+  width:100%;
+  height:149px;
+}
+
+.registrationBlock{
+  background-image: url("../img/regphoto.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 200vw;  
+}
+
+.inRegstrBlck{ 
+  height:400px;
+  width: 100%;
+}
+
+}

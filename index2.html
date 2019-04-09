@@ -7,7 +7,8 @@
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link href="css/style.css" rel="stylesheet" type="text/css">  
+
+	<link href="css/style2.css" rel="stylesheet" type="text/css">  
 
 	<link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.css">
 
@@ -106,11 +107,11 @@
 					</li>
 
 					<li  class="drop-left" id="hovDropMenu">
-						<a href="">Профиль</a>
+						<a href="#">Профиль</a>
 					</li>
 
 					<li  class="drop-left" id="hovDropMenu">
-						<a href="">Корзина</a>
+						<a href="#">Корзина</a>
 					</li>
 
 					<li  class="drop-left" id="hovDropMenu">
@@ -126,7 +127,7 @@
 
 <div class="stellarnav">
 	<ul class="right">
-		<li class="drop-left" id="hovDropMenu"><a href="#">Главная</a></li>
+		<li class="drop-left" id="hovDropMenu"><a href="index.html">Главная</a></li>
 
 		<li class="drop-left" id="hovDropMenu"><a href="#">Аксессуары для книг</a>
 			<ul>
@@ -154,109 +155,49 @@
 
 </header>
 
-<div class="slider">
-	<img src="img/slide1.jpg" class="responsive-img" width="100%">
-	<img src="img/slide2.jpg" class="responsive-img" width="100%">
-	<img src="img/slide3.png" class="responsive-img" width="100%">
-</div>
+<div class="registrationBlock">
+	
+	<div class="dopTextBlock">
+		<p><b class="sizeReg">
+		<div class="dopText">Интернет-магазин</div>
+		<div class="dopLogo">"Лабиринты Разума"</div>
+		</b></p>
+		<p class="dopText">Книги, бестселлеры, новинки - найдется все!</p>
+	</div>
 
-<div class="content-block">
-	<ul>
-		<li>
-			<div class="content">
-				<a href=""><img src="img/content1.jpg"></a>
-			</div>
-		</li>
-		<li>
-			<div class="content">
-				<a href=""><img src="img/content2.jpg"></a>
-			</div>
-		</li>
-		<li>
-			<div class="content">
-				<a href=""><img src="img/content3.jpg"></a>
-			</div>
-		</li>
-	</ul>
+	<div class="inRegstrBlck">
+		
+		<div class="formBlock">
+			
+			<form action="index.php" method="POST" name="requestname"  enctype="multipart/form-data">
+				<ul>
 
-</div>
+				<li class="widthInp">
+					<p class="textInput"><b>Ваше имя:</b></p>
+					<input type="text" name="Name" class="inputPl">
+				</li>
+				
+				<li class="widthInp">
+					<p class="textInput"><b>Ваш email:</b></p>
+					<input type="text" name="Email" class="inputPl">
+				</li>
 
-<div class="sell-books">
-	<ul>
-		<h1><b>Бестселлеры</b></h1>
-		<li>
-			<div class="books-sell">
-				<a href=""><img src="img/book1.jpg"></a>
-				<p><b>Эпическая сага о борьбе за Железный трон</b></p>
-				<b>2000 руб.</b>
-				<button type="button">В корзину</button>
-			</div>
-		</li>
-		<li>
-			<div class="books-sell">
-				<a href=""><img src="img/book2.jpg"></a>
-				<p><b>Завершающая книга о Гарри Поттере</b></p>
-				<b>1000 руб.</b>
-				<button type="button">В корзину</button>
-			</div>
-		</li>
-		<li>
-			<div class="books-sell">
-				<a href=""><img src="img/book3.jpg"></a>
-				<p><b>Одна из лучших книг М.У. Сомерсета</b></p>
-				<b>1500 руб.</b>
-				<button type="button">В корзину</button>
-			</div>
-		</li>
-		<li>
-			<div class="books-sell">
-				<a href=""><img src="img/book4.jpg"></a>
-				<p><b>Сборник похождений ведьмака Геральта</b></p>
-				<b>1500 руб.</b>
-				<button type="button">В корзину</button>
-			</div>
-		</li>
-	</ul>
-</div>
-<div class="spring-sell-out">
-	<ul>
-		<h1>Весенняя Распродажа</h1>
-		<li>
-			<div class="sell-out">
-				<a href=""><img src="img/sellout1.jpg"></a>
-				<p><b>Начало великой эпопеи</b></p>
-				<b>2500 руб.</b>
-				<button type="button">В корзину</button>
-			</div>
-		</li>
-		<li>
-			<div class="sell-out">
-				<a href=""><img src="img/sellout2.jpg"></a>
-				<p><b>Печальная история Первой Мировой</b></p>
-				<b>1500 руб.</b>
-				<button type="button">В корзину</button>
-			</div>
-		</li>
-		<li>
-			<div class="sell-out">
-				<a href=""><img src="img/sellout3.jpg"></a>
-				<p><b>Психологический триллер от Стивена Кинга</b></p>
-				<b>1500 руб.</b>
-				<button type="button">В корзину</button>
-			</div>
-		</li>
-		<li>
-			<div class="sell-out">
-				<a href=""><img src="img/sellout4.jpg"></a>
-				<p><b>Начало легендарной саги S.T.A.L.K.E.R.</b></p>
-				<b>1000 руб.</b>
-				<button type="button">В корзину</button>
-			</div>
-		</li>
-	</ul>
-</div>
-<div class="map">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224.88747238098!2d47.27843791552181!3d56.10716568064962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a37c9d32b68c5%3A0xbc7e61fe91122fc!2z0JvQsNCx0LjRgNC40L3Rgg!5e0!3m2!1sru!2sru!4v1554747978518!5m2!1sru!2sru" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<li class="widthInp">
+					<p class="textInput"><b>Ваш пароль:</b></p>
+					<input type="text" name="Password" class="inputPl">
+				</li>
+
+				<li><p class="widthInp2">
+					<input type="button" onclick="request()" value="Отправить" class="inpButton">
+				</li></p>
+<div id="result_output" style="color: #71827c; position: absolute; margin-top: 400px;"> </div>
+				</ul>
+			</form>
+
+		</div>
+
+	</div>
+
 </div>
 
 <footer class="page-footer">
@@ -312,6 +253,7 @@
 		</div>
 	</div>
 </footer>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
@@ -321,6 +263,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 
 <script type="text/javascript" src="script.js"></script>
-
+<script src="request.js"></script>
 </body>
 </html>

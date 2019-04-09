@@ -1,3 +1,7 @@
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
 const overlay1 = document.querySelector('.overlay-1');
 const overlay2 = document.querySelector('.overlay-2');
 const search = document.querySelector('.search');
@@ -68,6 +72,5 @@ auto: true,
 speed: 1000,
 pause: 4000,
 pager: false,
-autoControls: false,
+autoControls: false
 });
-
