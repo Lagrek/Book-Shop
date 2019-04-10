@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-
+<script src='https://www.google.com/recaptcha/api.js?render=6LfVX50UAAAAAE5btFrWwNXj-lWQ-kKYZykCS_pz'></script>
 
 	<title> "Лабиринты Разума" - Книжный магазин</title>
 
@@ -43,7 +43,7 @@
 					</li>
 
 					<li  class="iconBlocks">
-						<a href="index2.html">Регистрация</a>
+						<a href="index2.php">Регистрация</a>
 					</li>
 
 					<li>
@@ -259,6 +259,10 @@
 <div id="map" style="width:100%; height:600px;">
 	
 </div>
+<form id="comment-form" method="post" action="verify_captcha.php">
+            <input type="hidden" name="token" id="token">
+            <input type="hidden" name="action" id="action">
+        </form>
 
 <footer class="page-footer">
 	<div class="container">
@@ -314,6 +318,20 @@
 	</div>
 </footer>
 
+<script>
+        let captcha_action = 'add_comment';
+     
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfVX50UAAAAAE5btFrWwNXj-lWQ-kKYZykCS_pz', {action: captcha_action})
+                .then(function(token) {
+                    if (token) {
+                        document.getElementById('token').value = token;
+                        document.getElementById('action').value = captcha_action;
+                    }
+                });
+        });
+    </script>
+    
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
